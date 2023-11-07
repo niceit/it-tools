@@ -38,38 +38,6 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
       keywords: ['random', 'tool', 'pick', 'choose', 'select'],
       closeOnSelect: true,
     },
-    {
-      name: 'Toggle dark mode',
-      description: 'Toggle dark mode on or off.',
-      action: () => styleStore.toggleDark(),
-      icon: SunIcon,
-      category: 'Actions',
-      keywords: ['dark', 'theme', 'toggle', 'mode', 'light', 'system'],
-    },
-    {
-      name: 'Github repository',
-      href: 'https://github.com/CorentinTh/it-tools',
-      category: 'External',
-      description: 'View the source code of it-tools on Github.',
-      keywords: ['github', 'repo', 'repository', 'source', 'code'],
-      icon: GithubIcon,
-    },
-    {
-      name: 'Report a bug or an issue',
-      description: 'Report a bug or an issue to help improve it-tools.',
-      href: 'https://github.com/CorentinTh/it-tools/issues/new/choose',
-      category: 'Actions',
-      keywords: ['report', 'issue', 'bug', 'problem', 'error'],
-      icon: BugIcon,
-    },
-    {
-      name: 'About',
-      description: 'Learn more about IT-Tools.',
-      to: '/about',
-      category: 'Pages',
-      keywords: ['about', 'learn', 'more', 'info', 'information'],
-      icon: InfoIcon,
-    },
   ];
 
   const { searchResult } = useFuzzySearch({
